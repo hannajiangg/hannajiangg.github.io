@@ -322,43 +322,44 @@ profile-photo .img{
 
 
 /*---------------------------Projects---------------------------*/
-.project-content{
-  padding: 1100px 0;
-  /* color:#fff;  */
-  /*change this for buffer between experience and my project */
+.project-content {
+  padding: 1600px 0;
+  overflow: hidden;
 }
-.project-title{
+
+.project-title {
   margin-bottom: 60px;
   text-align: center;
 }
-.project-title h4{
+
+.project-title h4 {
   text-transform: uppercase;
   font-size: 40px;
   line-height: 40px;
   color: #fed700;
   margin-bottom: 20px;
 }
-.project-title p{
+
+.project-title p {
   color: #e5e5e5;
 }
-.projects{
-  display: flex;
-  justify-content:space-between;
-  flex-wrap: wrap;
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
-.project{
-    /* padding: 30px 15px; */
-    color: #e5e5e5;
-    border: 2px solid #e5e5e5;
-    border-radius: 10px;
-    width: 100%;
-    position: relative;
-    padding: 25px;
-    text-align: center;
-    flex-basis: 32%;
-    transition: .3s;
+
+.project {
+  color: #e5e5e5;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  transition: border-color 0.3s ease;
 }
-.project i{
+
+.project i {
   background-color: #fed700;
   width: 60px;
   height: 60px;
@@ -366,20 +367,43 @@ profile-photo .img{
   font-size: 26px;
   line-height: 60px;
   border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
-.project h4{
+
+.project h4 {
   font-size: 26px;
   text-transform: capitalize;
   margin: 20px 0;
+  color: #fed700;
 }
-.project p{
+
+.project p {
   text-align: justify;
+  color: #e5e5e5;
+  margin: 10px 0;
 }
-.project:hover{
+
+.project:hover {
   border-color: #fed700;
 }
 
+@media (max-width: 992px) {
+  .projects {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+@media (max-width: 768px) {
+  .project-content {
+      padding: 100px 20px;
+  }
+  .projects {
+      grid-template-columns: 1fr;
+  }
+}
 
 /*---------------------------Contact Me---------------------------*/
 .contact-content{
@@ -426,13 +450,9 @@ profile-photo .img{
 }
 
 
-
-
-
-
 /*---------------------------Footer---------------------------*/
 .footer {
-    max-width: 950px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 15px 0 26px;
     border-top: 1px solid rgba(255, 255, 255, 0.1); 
@@ -453,8 +473,6 @@ profile-photo .img{
   }
 
 
-
-
  /*------------------- Responsive Design on small screen -------------------*/
 
 /* Medium layout */
@@ -473,8 +491,6 @@ profile-photo .img{
     padding: 40px 0px;
   }
 }
-
-
 
 /* tablet layout */
 @media only screen and (min-width:768px) and (max-width:999px){
@@ -533,4 +549,3 @@ profile-photo .img{
   }
 
 }
-
