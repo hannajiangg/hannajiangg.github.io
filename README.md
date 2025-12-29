@@ -10,5 +10,5 @@ Run locally.
 ```
 npm install
 npm run generate
-npm install --save-dev live-server
+npm install start
 ```
