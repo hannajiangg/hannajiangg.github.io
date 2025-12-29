@@ -6,8 +6,9 @@ Self explanatory :)
 
 Install dependencies.
 Start server.
-Open browser go to http://localhost:3000
+Run locally.
 ```
 npm install
-npm start
+npm run generate
+npm install --save-dev live-server
 ```
