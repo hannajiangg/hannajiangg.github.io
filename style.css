@@ -235,7 +235,7 @@ p {
 }
 
 .photo-folder {
-    margin-top: 40px; /* space between folders */
+    margin-top: 40px
 }
 
 .photo-folder-header {
@@ -247,9 +247,9 @@ p {
 
 .photo-folder-grid {
     display: grid;
-    grid-template-columns: repeat(2, 600px); /* exactly 2 cards per row */
-    gap: 20px; /* space between cards */
-    justify-content: center; /* center the grid */
+    grid-template-columns: repeat(2, 600px);
+    gap: 20px;
+    justify-content: center;
 }
 
 

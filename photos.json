@@ -3,27 +3,27 @@
     "folder": "Architecture",
     "images": [
       {
-        "src": "/pics/Architecture/1.jpeg",
+        "src": "pics/Architecture/1.jpeg",
         "caption": "1.jpeg"
       },
       {
-        "src": "/pics/Architecture/2.jpeg",
+        "src": "pics/Architecture/2.jpeg",
         "caption": "2.jpeg"
       },
       {
-        "src": "/pics/Architecture/3.jpeg",
+        "src": "pics/Architecture/3.jpeg",
         "caption": "3.jpeg"
       },
       {
-        "src": "/pics/Architecture/4.jpeg",
+        "src": "pics/Architecture/4.jpeg",
         "caption": "4.jpeg"
       },
       {
-        "src": "/pics/Architecture/5.jpeg",
+        "src": "pics/Architecture/5.jpeg",
         "caption": "5.jpeg"
       },
       {
-        "src": "/pics/Architecture/6.jpeg",
+        "src": "pics/Architecture/6.jpeg",
         "caption": "6.jpeg"
       }
     ]
@@ -32,27 +32,27 @@
     "folder": "Mountain",
     "images": [
       {
-        "src": "/pics/Mountain/1.jpeg",
+        "src": "pics/Mountain/1.jpeg",
         "caption": "1.jpeg"
       },
       {
-        "src": "/pics/Mountain/2.jpeg",
+        "src": "pics/Mountain/2.jpeg",
         "caption": "2.jpeg"
       },
       {
-        "src": "/pics/Mountain/3.jpeg",
+        "src": "pics/Mountain/3.jpeg",
         "caption": "3.jpeg"
       },
       {
-        "src": "/pics/Mountain/4.jpeg",
+        "src": "pics/Mountain/4.jpeg",
         "caption": "4.jpeg"
       },
       {
-        "src": "/pics/Mountain/5.jpeg",
+        "src": "pics/Mountain/5.jpeg",
         "caption": "5.jpeg"
       },
       {
-        "src": "/pics/Mountain/6.jpeg",
+        "src": "pics/Mountain/6.jpeg",
         "caption": "6.jpeg"
       }
     ]
@@ -61,27 +61,27 @@
     "folder": "Water",
     "images": [
       {
-        "src": "/pics/Water/1.jpeg",
+        "src": "pics/Water/1.jpeg",
         "caption": "1.jpeg"
       },
       {
-        "src": "/pics/Water/2.jpeg",
+        "src": "pics/Water/2.jpeg",
         "caption": "2.jpeg"
       },
       {
-        "src": "/pics/Water/3.jpeg",
+        "src": "pics/Water/3.jpeg",
         "caption": "3.jpeg"
       },
       {
-        "src": "/pics/Water/4.png",
+        "src": "pics/Water/4.png",
         "caption": "4.png"
       },
       {
-        "src": "/pics/Water/5.jpeg",
+        "src": "pics/Water/5.jpeg",
         "caption": "5.jpeg"
       },
       {
-        "src": "/pics/Water/6.JPG",
+        "src": "pics/Water/6.JPG",
         "caption": "6.JPG"
       }
     ]
