@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hanna Jiang</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- JS -->
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <h1 class="fade-in">Hanna Jiang</h1>
+    <p class="subtitle fade-in-delay">Technology · Builder · Explorer</p>
+
+    <!-- Action Links -->
+    <div class="actions fade-in-delay-2">
+        <a href="/author/Hanna_Jiang_resume.pdf" download class="action-icon" aria-label="Resume">
+            <i class="fa-regular fa-file-lines"></i><span>Resume</span>
+        </a>
+        <a href="https://www.linkedin.com/in/hanna-jiang/" target="_blank" class="action-icon" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/hannajiangg" target="_blank" class="action-icon" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i><span>GitHub</span>
+        </a>
+        <a href="mailto:hannajiangg@gmail.com" class="action-icon" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i><span>Email</span>
+        </a>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs fade-in-delay-3">
+        <button onclick="openTab('about')" class="active">About</button>
+        <button onclick="openTab('experience')">Experience</button>
+        <button onclick="openTab('projects')">Projects</button>
+        <button onclick="openTab('photos')">Photos</button>
+        <button onclick="openTab('misc')">Misc.</button>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- About -->
+        <div id="about" class="tab-content show">
+            <h2>About Me</h2>
+            <p>Hi! I'm Hanna. I'm from Boston, Massachusetts and completed my Bachelor's and Master's degrees in Computer Science at the University of Massachusetts, Amherst. I've had the wonderful opportunities to gain experience at AWS, Amex, and research labs at my university. On the side, I am building Gather, an application much like Partiful with a few updates.</p>
+            <p>I'm inspired by the intersection of technology and art, especially film, music, and psychology; I'm passionate about education and community as a teaching assistant.</p>
+
+            <div class="author-photo-container">
+                <img src="/author/Hanna.jpeg" alt="Hanna" class="author-photo">
+                <div class="author-caption">Mt. Rinjani, Lombok, Indonesia – 3,726 m above sea level</div>
+            </div>           
+        </div>
+
+        <!-- Experience -->
+        <div id="experience" class="tab-content">
+        <h2>Experience</h2>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <h3>American Express</h3>
+                        <span class="timeline-meta">
+                            Software Engineering Intern · New York, NY · Jun 2025 — Present
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <h3>Amazon Web Services</h3>
+                        <span class="timeline-meta">
+                            Software Development Intern · Seattle, WA · Jun 2024 — Aug 2024
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <h3>Gather Remote</h3>
+                        <span class="timeline-meta">
+                            Founding Machine Learning Engineer · Remote · Feb 2024 — Present
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <div>
+                        <h3>Lab for Advanced Sleep Software and Sleep</h3>
+                        <span class="timeline-meta">
+                            Software Engineering Intern · Amherst, MA · Jun 2023 — Aug 2023
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <!-- Projects -->
+        <div id="projects" class="tab-content">
+            <h2>Projects</h2>
+            <p>
+                At the heart of all my personal project is learning and fun: from full-stack to backend to game development.
+            </p>
+
+            <div class="projects-grid">
+
+                <div class="project-card fade-in-delay">
+                    <h3>Distributed Stock Trading System</h3>
+                    <p>
+                        Built a microservices-based stock trading system with Flask and Docker, ensuring high availability and fault tolerance.
+                    </p>
+                    <a href="https://github.com/hannajiangg/Distributed-Stock-Trader" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in-delay-2">
+                    <h3>Solving NYT Connections with NLP</h3>
+                    <p>
+                        Fine-tuned LLaMA models to solve NYT Connections puzzles and explored model adaptability with visualization tools.
+                    </p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in-delay-3">
+                    <h3>TuneLink</h3>
+                    <p>
+                        Cross-platform mobile app built with React Native and Expo for sharing music, complete with a personalized recommendation engine.
+                    </p>
+                    <a href="https://github.com/hannajiangg/NLP-NYT-Crossword-Solver" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card fade-in-delay-4">
+                    <h3>OverMath</h3>
+                    <p>
+                        OverMath is a fast-paced math puzzle game inspired by Overcooked. Players form equations to fulfill customer orders while evading mischievous animals in the kitchen.
+                    </p>
+                    <a href="https://github.com/hannajiangg/OverMath" class="project-link">View Project →</a>
+                    <a href="https://www.youtube.com/watch?v=8oPqhidQNMA" target="_blank" class="project-link">Watch Gameplay →</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Photos -->
+        <div id="photos" class="tab-content">
+            <h2>Photos</h2>
+            <p>Shot on iPhone.</p>
+            <div id="photoGrid" class="photo-grid"></div>
+        </div>
+
+        <!-- Misc. -->
+        <div id="misc" class="tab-content">
+            <h2>Misc.</h2>
+            <p>Links to my other socials.</p>
+
+            <a href="https://open.spotify.com/user/hannabob500?si=934d01ac790b48cf" target="_blank" class="action-icon" aria-label="Spotify">
+                <i class="fa-brands fa-spotify"></i><span>Spotify</span>
+            </a>
+
+            <a href="https://letterboxd.com/bananatree/" target="_blank" class="action-icon" aria-label="Letterboxd">
+                <i class="fa-brands fa-letterboxd"></i><span>Letterboxd</span>
+            </a>
+        </div>
+
+
+
+    </div>
+
+</div>
+</body>
+</html>

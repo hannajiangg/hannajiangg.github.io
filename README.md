@@ -1,18 +1,13 @@
-# Hanna's Portfolio Website
+# Hanna Jiang Personal Website
 
-Welcome to Hanna's Portfolio Website - a website highlighting my interests and experiences!
+Self explanatory :)
 
-## Take a Look
+## Run Instructions
 
-**Link:** [Hanna's Portfolio](https://hannajiangg.github.io/)
-
-## Current Highlights
-
-- Made with JavaScript, HTML, and CSS
-- 5 tabs that bring you through different aspects of my experiences
-
-## Running the Project Locally
-
-1. **Install `live-server` (if not already installed):**
-   ```bash
-   npm install -g live-server
+Install dependencies.
+Start server.
+Open browser go to http://localhost:3000
+```
+npm install
+npm start
+```

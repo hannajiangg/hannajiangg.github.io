@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #ffffff;
+    color: #111;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.resume-link {
+    display: inline-block;
+    color: #0071e3;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.resume-link:hover {
+    text-decoration: underline;
+}
+
+.tabs {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.tabs button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #666;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.tabs button.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.content {
+    position: relative;
+}
+
+.tab-content {
+    opacity: 0;
+    transform: translateY(10px);
+    position: absolute;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.tab-content.show {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+}
+
+h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.fade-in {
+    animation: fade 0.8s ease forwards;
+}
+
+.fade-in-delay {
+    animation: fade 0.8s ease 0.2s forwards;
+    opacity: 0;
+}
+
+.fade-in-delay-2 {
+    animation: fade 0.8s ease 0.4s forwards;
+    opacity: 0;
+}
+
+.fade-in-delay-3 {
+    animation: fade 0.8s ease 0.6s forwards;
+    opacity: 0;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.actions {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 50px;
+}
+
+.action-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #111;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.action-icon i {
+    font-size: 1rem;
+    color: #555;
+    transition: color 0.25s ease;
+}
+
+.action-icon span {
+    color: #0071e3;
+}
+
+.action-icon:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.action-icon:hover i {
+    color: #0071e3;
+}
+
+.timeline {
+    margin-top: 30px;
+    border-left: 1px solid #e5e5e5;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    background: #111;
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.timeline-item h3 {
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.timeline-meta {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.project-card p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.project-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #0071e3;
+    transition: color 0.2s ease;
+}
+
+.project-link:hover {
+    color: #005bb5;
+}
+
+.photo-folder {
+    margin-top: 40px; /* space between folders */
+}
+
+.photo-folder-header {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.photo-folder-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 600px); /* exactly 2 cards per row */
+    gap: 20px; /* space between cards */
+    justify-content: center; /* center the grid */
+}
+
+
+.photo-card {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    object-fit: contain;
+}
+
+
+
+.author-photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.author-photo {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.author-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+    font-size: 16px;
+    text-align: center;
+}
