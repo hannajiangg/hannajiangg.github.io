@@ -25,9 +25,31 @@ h1 {
 
 .subtitle {
     font-size: 1.25rem;
+    font-weight: 500;
     color: #555;
-    margin-bottom: 2rem;
+    letter-spacing: 0.8px;
+    text-align: center;
 }
+
+.hero {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.name {
+    font-size: 3rem; /* large, but clean */
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #555;
+    letter-spacing: 0.8px;
+}
+
 
 .resume-link {
     display: inline-block;
@@ -49,14 +71,14 @@ h1 {
 }
 
 .tabs button {
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: #333;
     cursor: pointer;
-    padding: 0.75rem 0;
+    padding: 1rem 0;
+    background: none;
+    border: none;
+    outline: none;
     position: relative;
     transition: color 0.25s ease;
     letter-spacing: 0.5px;
@@ -64,19 +86,21 @@ h1 {
 
 .tabs button::after {
     content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: #0071e3;
+    transition: width 0.3s ease;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: #0070f3;
-    transition: width 0.3s ease;
 }
 
 .tabs button:hover::after,
 .tabs button.active::after {
     width: 100%;
 }
+
 
 .tabs button:hover {
     color: #000;
@@ -147,59 +171,28 @@ p {
 }
 
 .action-icon {
-    text-decoration: none;
-    color: #111;
-    font-weight: 500;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    transition: color 0.2s;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    color: #1c1c1e;
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.action-icon {
+    color: #1c1c1e;
+    background-color: rgba(0,0,0,0.05);
 }
 
 .action-icon:hover {
-    color: #0070f3;
+    color: #0071e3;
+    background-color: rgba(0, 113, 227, 0.1);
 }
 
-/* 
-.timeline {
-    margin-top: 30px;
-    border-left: 1px solid #e5e5e5;
-    padding-left: 30px;
-}
-
-.timeline-item {
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.timeline-item::before {
-    content: "";
-    position: absolute;
-    left: -36px;
-    top: 6px;
-    width: 10px;
-    height: 10px;
-    background: #111;
-    border-radius: 50%;
-}
-
-.timeline-date {
-    font-size: 0.85rem;
-    color: #777;
-}
-
-.timeline-item h3 {
-    margin: 5px 0;
-    font-weight: 500;
-}
-
-.timeline-meta {
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 8px;
-} */
-
-/* Experience Section */
 .experience-header {
     text-align: center;
     max-width: 700px;
@@ -218,7 +211,6 @@ p {
     line-height: 1.6;
 }
 
-/* Timeline container */
 .experience-list {
     display: flex;
     flex-direction: column;
