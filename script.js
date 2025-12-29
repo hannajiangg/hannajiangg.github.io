@@ -1,25 +1,39 @@
-// Render photos recursively
+// render photos
 function renderPhotos(items, parent) {
     items.forEach(item => {
       if (item.folder && item.images) {
-        const container = document.createElement('div');
-        container.className = 'photo-folder';
+        // Folder container
+        const folderDiv = document.createElement('div');
+        folderDiv.className = 'photo-folder';
   
-        const title = document.createElement('h3');
-        title.textContent = item.folder;
-        container.appendChild(title);
+        const header = document.createElement('h3');
+        header.className = 'photo-folder-header';
+        header.textContent = item.folder;
+        folderDiv.appendChild(header);
   
-        renderPhotos(item.images, container);
-        parent.appendChild(container);
+        // Grid container
+        const gridDiv = document.createElement('div');
+        gridDiv.className = 'photo-folder-grid';
+  
+        // Recursively render images into the grid
+        renderPhotos(item.images, gridDiv);
+        folderDiv.appendChild(gridDiv);
+  
+        parent.appendChild(folderDiv);
       } else if (item.src) {
+        // Single photo wrapped in card
+        const card = document.createElement('div');
+        card.className = 'photo-card';
+  
         const img = document.createElement('img');
         img.src = item.src;
         img.alt = item.caption || '';
-        img.className = 'photo';
-        parent.appendChild(img);
+        card.appendChild(img);
+  
+        parent.appendChild(card);
       }
     });
-  }
+  }  
   
   // Load photos.json
   async function loadPhotos() {
@@ -54,41 +68,3 @@ function renderPhotos(items, parent) {
     const firstTab = document.querySelector('.tabs button');
     if (firstTab) firstTab.click();
   });
-
-  function renderPhotos(items, parent) {
-    items.forEach(item => {
-      if (item.folder && item.images) {
-        // Folder container
-        const folderDiv = document.createElement('div');
-        folderDiv.className = 'photo-folder';
-  
-        const header = document.createElement('h3');
-        header.className = 'photo-folder-header';
-        header.textContent = item.folder;
-        folderDiv.appendChild(header);
-  
-        // Grid for images
-        const gridDiv = document.createElement('div');
-        gridDiv.className = 'photo-folder-grid';
-  
-        // Recursively render images/folders inside grid
-        renderPhotos(item.images, gridDiv);
-        folderDiv.appendChild(gridDiv);
-  
-        parent.appendChild(folderDiv);
-      } else if (item.src) {
-        // Single photo wrapped in card
-        const card = document.createElement('div');
-        card.className = 'photo-card';
-  
-        const img = document.createElement('img');
-        img.src = item.src;
-        img.alt = item.caption || '';
-        card.appendChild(img);
-  
-        parent.appendChild(card);
-      }
-    });
-  }
-  
-  
