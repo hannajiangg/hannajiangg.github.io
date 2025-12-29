@@ -15,13 +15,13 @@ function renderPhotos(items, parent) {
         const gridDiv = document.createElement('div');
         gridDiv.className = 'photo-folder-grid';
   
-        // Recursively render images into the grid
+        // Recursively render photos into the grid
         renderPhotos(item.images, gridDiv);
         folderDiv.appendChild(gridDiv);
   
         parent.appendChild(folderDiv);
       } else if (item.src) {
-        // Single photo wrapped in card
+        // Each image wrapped in a card for CSS
         const card = document.createElement('div');
         card.className = 'photo-card';
   
