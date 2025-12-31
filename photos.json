@@ -1,58 +1,58 @@
 [
   {
-    "folder": "Architecture",
+    "folder": "Metal",
     "images": [
       {
-        "src": "pics/Architecture/1.jpeg",
+        "src": "pics/Metal/1.jpeg",
         "caption": "1.jpeg"
       },
       {
-        "src": "pics/Architecture/2.jpeg",
+        "src": "pics/Metal/2.jpeg",
         "caption": "2.jpeg"
       },
       {
-        "src": "pics/Architecture/3.jpeg",
+        "src": "pics/Metal/3.jpeg",
         "caption": "3.jpeg"
       },
       {
-        "src": "pics/Architecture/4.jpeg",
+        "src": "pics/Metal/4.jpeg",
         "caption": "4.jpeg"
       },
       {
-        "src": "pics/Architecture/5.jpeg",
+        "src": "pics/Metal/5.jpeg",
         "caption": "5.jpeg"
       },
       {
-        "src": "pics/Architecture/6.jpeg",
+        "src": "pics/Metal/6.jpeg",
         "caption": "6.jpeg"
       }
     ]
   },
   {
-    "folder": "Mountain",
+    "folder": "Rock",
     "images": [
       {
-        "src": "pics/Mountain/1.jpeg",
+        "src": "pics/Rock/1.jpeg",
         "caption": "1.jpeg"
       },
       {
-        "src": "pics/Mountain/2.jpeg",
+        "src": "pics/Rock/2.jpeg",
         "caption": "2.jpeg"
       },
       {
-        "src": "pics/Mountain/3.jpeg",
+        "src": "pics/Rock/3.jpeg",
         "caption": "3.jpeg"
       },
       {
-        "src": "pics/Mountain/4.jpeg",
+        "src": "pics/Rock/4.jpeg",
         "caption": "4.jpeg"
       },
       {
-        "src": "pics/Mountain/5.jpeg",
+        "src": "pics/Rock/5.jpeg",
         "caption": "5.jpeg"
       },
       {
-        "src": "pics/Mountain/6.jpeg",
+        "src": "pics/Rock/6.jpeg",
         "caption": "6.jpeg"
       }
     ]
